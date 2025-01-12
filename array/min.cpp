@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
+//find min value
+
+
 int main() {
     int arr[]={1,2,3,4,5 };
-    int max=arr[0];
+    int min=arr[0];
 
     for(int i=0;i<=4;i++)
     {
-        if(arr[i]>max)
+        if(arr[i]<min)
         {
-            max=arr[i];
+            min=arr[i];
         }
     }
-    cout<<max;
+    cout<<min;
 }
