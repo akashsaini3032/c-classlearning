@@ -1,4 +1,5 @@
 #include <iostream>
+//C++ structures and pointer usage.
 struct info
 {
     string name;

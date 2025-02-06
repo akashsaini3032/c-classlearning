@@ -2,6 +2,7 @@
 using namespace std;
 
 // after concept 3 image see then see this code
+//hybrid inherintance
 class A
 {
     public:

@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//inherintance
+
 class A
 {
     int a=10;

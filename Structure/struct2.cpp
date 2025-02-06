@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//structure and 2variables
 struct info
 {
     string name;

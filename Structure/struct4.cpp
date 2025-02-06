@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 //self referential structure
+//C++ structures, pointers, and linked lists.
 struct info
 {
     string name;

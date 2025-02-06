@@ -1,3 +1,4 @@
+//structure and variable
 struct info
 {
     string name="akash";
