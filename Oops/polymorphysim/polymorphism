@@ -1,0 +1,81 @@
+//Polymorphism means many forms 
+//function ,operator,object
+// see image for beter understanding
+
+//function
+//function overloadiong
+using namespace std;
+
+class one 
+{
+    public:void show()
+    {
+        cout<<"i am show1";
+    }
+    public:void show(int a)
+    {
+        cout<<a;
+    }
+};
+int main()
+{
+    one obj;
+    obj.show(10);
+    obj.show();
+}
+
+//operators
+//operator overloading
+using namespace std;
+class one
+{
+    public:int value;
+    public:one(int x=0)
+    {
+        value=x;
+    }
+    one add(one obj)
+    {
+        one temp;
+        temp.value=value+obj.value;
+        return temp;
+    }
+
+};
+int main()
+{
+    one obj1(10);
+    one obj2(20);
+    one obj3;
+    obj3=obj1.add(obj2);
+    cout<<obj3.value;
+}
+
+//OBJECT
+//object overwriting
+using namespace std;
+class hq
+{
+    public:virtual void show()=0;
+};
+class bhopal:public hq
+{
+    public:void show()
+    {
+        cout<<"price 16000rs";
+    }
+};
+class delhi:public hq
+{
+    public:void show()
+    {
+        cout<<"price 18000rs";
+    }
+};
+
+int main()
+{
+    hq *obj=new bhopal();
+    obj->show();
+}
+
