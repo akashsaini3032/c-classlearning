@@ -1,47 +1,15 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
-int dup=0;
-
 int main() {
-    int arr[]={1,2,1,2,3,3,2,1,2,5};
-    for(int i=0;i<10;++i)
+    int arr[]={10,20,4,6,7};
+    for(int i=0; i< 4; i++)
     {
-        bool dup=false;
-        for(int j=i+1;j<10;++j)
-        if(arr[i]==arr[j])
-        {
-            arr[j]=-1;
-            dup=true;
+        if(arr[i+1]-arr[i] > 1){
+            int start=arr[i]+1;
+            while(start<arr[i+1]){
+                cout<<start++<<endl;
+            }
         }
     }
-    if(dup&& arr[i]!=-1)
-    cout<<arr[i];
-    
-    
- 
-}
-
-// for not
-
-#include <iostream>
-using namespace std;
-int dup=0;
-
-int main() {
-    int arr[]={1,2,1,2,3,3,2,1,2,5};
-    for(int i=0;i<10;++i)
-    {
-        bool dup=false;
-        for(int j=i+1;j<10;++j)
-        if(arr[i]==arr[j])
-        {
-            arr[j]=-1;
-            dup=true;
-        }
-    }
-    if( !dup&& arr[i]!=-1)
-    cout<<arr[i];
-    
-    
- 
 }
