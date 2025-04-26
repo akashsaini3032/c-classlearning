@@ -1,15 +1,29 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
+
+//Remove duplicate element in the given array
+
 int main() {
-    int arr[]={10,20,4,6,7};
-    for(int i=0; i< 4; i++)
-    {
-        if(arr[i+1]-arr[i] > 1){
-            int start=arr[i]+1;
-            while(start<arr[i+1]){
-                cout<<start++<<endl;
-            }
+    int arr[]={2,1,2,1,3,4};
+    
+    for(int i=0;i<6;i++){
+        for(int j=i+1;j<6;j++){
+            if(arr[i]==arr[j]){
+            arr[j]=-1;
+
+        }
+        }
+        
+    }
+
+    for(int i=0;i<6;i++){
+        if(arr[i]!=-1){
+            cout<<arr[i]<<'\t';
         }
     }
+    return 0;
+ 
 }
+
+
+
