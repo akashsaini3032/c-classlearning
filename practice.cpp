@@ -1,20 +1,20 @@
 
 #include <iostream>
 using namespace std;
-//Shallow copy
+//deep copy
 class one{
-    int a;
+    int *a;
     public:one(int x)
     {
-    
-        a=x;
-        cout<<a;
+        a=new int;
+        *a=x;
+        cout<<*a;
     }
     public:one(one &obj)
     {
-        
-        a=obj.a;
-        cout<<a;
+        a=new int;
+        *a=*obj.a;
+        cout<<*a;
     }
 };
 
