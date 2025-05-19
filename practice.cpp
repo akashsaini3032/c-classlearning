@@ -1,35 +1,39 @@
 
 
+
+
+
+
 #include <iostream>
 using namespace std;
-void anagram(string str1,string str2)
+void sub(string str1,string str2)
 {
-    if(str1.length()!=str2.length())
+    if(str2.length()==0)
     {
-        cout<<"not";
+        cout<<"subsequence";
         return;
     }
-    int count[256]={0};
+    int j=0;
     for(int i=0;i<str1.length();++i)
     {
-        count[str1[i]]++;
-        count[str2[i]]--;
-    }
-    for(int i=0;i<256;++i)
-    {
-        if(count[i]!=0)
+        if(str1[i]==str2[j])
         {
-            cout<<"not";
-            return;
+            j++;
         }
     }
-    cout<<"anagram";
+    if(j==str2.length())
+    {
+        cout<<"subsequence";
+    }
+    else
+    {
+        cout<<"not";
+    }
 }
 
 int main()
 {
-    string str1="abcde";
-    string str2="edcba";
-    anagram(str1,str2);
+    string str1="Ab34";
+    string str2="Ab39";
+    sub(str1,str2);
 }
-    
