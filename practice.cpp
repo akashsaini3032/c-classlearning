@@ -6,34 +6,30 @@
 
 #include <iostream>
 using namespace std;
-void sub(string str1,string str2)
-{
-    if(str2.length()==0)
+int main() {
+    int ft=0;
+    int st=1;
+    int next=0;
+    for(int i=0;i<5;++i)
     {
-        cout<<"subsequence";
-        return;
-    }
-    int j=0;
-    for(int i=0;i<str1.length();++i)
-    {
-        if(str1[i]==str2[j])
+        if(i==0)
         {
-            j++;
+            cout<<ft<<endl;
+            continue;
         }
-    }
-    if(j==str2.length())
-    {
-        cout<<"subsequence";
-    }
-    else
-    {
-        cout<<"not";
-    }
-}
+        
+        if(i==1)
+        {
+        cout<<st<<endl;
+        continue;
+        }
+    
 
-int main()
-{
-    string str1="Ab34";
-    string str2="Ab39";
-    sub(str1,str2);
+    next=ft+st;
+    ft=st;
+    st=next;
+    
+    cout<<next<<endl;
+} 
 }
+    
