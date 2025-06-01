@@ -6,15 +6,28 @@
  #include <iostream>
 using namespace std;
 
-int main() {
-    int arr[]={101,102,103,104,105 }
-    
-    cout<<arr[0];
-    cout<<arr[1];
-    cout<<arr[2];
-    
-    for(int i=0;i<=2;i++)
+//uc uppercase lc lower case
+void uclc(string &str1)
+{
+    for(int i=0; i<str1.length(); ++i)
     {
-        cout<<arr[i];
+        if(str1[i]>='A' && str1[i]<='Z')
+        {
+            str1[i] = str1[i] + 32;
+        }
+        else if(str1[i]>='a' && str1[i]<='z')
+        {
+            str1[i] = str1[i] - 32;
+        }
+        
     }
+}
+
+int main()
+{
+    string str1 = "AbCd";
+    uclc(str1);
+    cout << str1;
+
+    return 0;
 }
