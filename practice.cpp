@@ -5,44 +5,26 @@
 
 #include <iostream>
 using namespace std;
-
-// after concept 3 image see then see this code
-//hybrid inherintance
-class A
-{
-    public:
-         int p=10;
-         A()
-         {
-             cout<<"A";
-         }
-};
-class B: virtual public A
-{
-    public: B()
+//deep copy
+class one{
+    int *a;
+    public:one(int x)
     {
-        cout<<"B";
+        a=new int;
+        *a=x;
+        cout<<*a;
     }
-};
-class C: virtual public A
-{
-    public: C()
+    public:one(one &obj)
     {
-        cout<<"C";
-    }
-};
-
-class D:public C, public B
-{
-    public: D()
-    {
-        cout<<"D";
+        a=new int;
+        *a=*obj.a;
+        cout<<*a;
     }
 };
 
 int main()
 {
-    D obj;
-
-    
+    one obj(10);
+    one obj1(obj);
 }
+    
