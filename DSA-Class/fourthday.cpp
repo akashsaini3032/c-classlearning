@@ -40,47 +40,47 @@
 //     ascnd(arr, size);
 // }
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// void leap(int year) {
-//     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-//         cout<<year<< " is a Leap Year.";
-//     } else {
-//         cout<<year<< " is not a Leap Year." ;
-//     }
-// }
+void leap(int year) {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        cout<<year<< " is a Leap Year.";
+    } else {
+        cout<<year<< " is not a Leap Year." ;
+    }
+}
 
-// int main() {
-//     int year;
-//     cout<<"Enter a year: ";
-//     cin>>year;
+int main() {
+    int year;
+    cout<<"Enter a year: ";
+    cin>>year;
 
-//     leap(year);
+    leap(year);
 
-//     return 0;
-// }
-// #include<iostream>
-// using namespace std;
-// void sum(int &a,int &b){
-// a=a+10;
-// b=b+5;
-// }
-// int main(){
-// int x,y;
-//     cin>>x>>y;
-// sum(x,y);
-// cout<<x<<" "<<y;
-// }
-// #include<iostream>
-// using namespace std;
-//  int sum(int &a,int &b){
-// a=a+10;
-// b=b+5;
-// }
-// int main(){
-// int x,y;
-//     cin>>x>>y;
-// sum(x,y);
-// cout<<x<<" "<<y;
-// }
+    return 0;
+}
+#include<iostream>
+using namespace std;
+void sum(int &a,int &b){
+a=a+10;
+b=b+5;
+}
+int main(){
+int x,y;
+    cin>>x>>y;
+sum(x,y);
+cout<<x<<" "<<y;
+}
+#include<iostream>
+using namespace std;
+ int sum(int &a,int &b){
+a=a+10;
+b=b+5;
+}
+int main(){
+int x,y;
+    cin>>x>>y;
+sum(x,y);
+cout<<x<<" "<<y;
+}
