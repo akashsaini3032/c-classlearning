@@ -297,23 +297,23 @@ int main() {
 }
 
 //13pattern printing:
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-void printNumberPattern(int n) {
-    int term = 0;
-    for (int i = 1; i <= n; i++) {
-        term = term * 10 + 1;
-        cout << term << endl;
-    }
-}
+// void printNumberPattern(int n) {
+//     int term = 0;
+//     for (int i = 1; i <= n; i++) {
+//         term = term * 10 + 1;
+//         cout << term << endl;
+//     }
+// }
 
-int main() {
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
-    printNumberPattern(n);
-    return 0;
-}
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+//     printNumberPattern(n);
+//     return 0;
+// }
 
