@@ -89,36 +89,36 @@
 
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-void bubble(int arr[], int s)
-{
-    int count = 0;
-    for (int i = 0; i < s; i++)
-    {
-              bool flag = false;
+// void bubble(int arr[], int s)
+// {
+//     int count = 0;
+//     for (int i = 0; i < s; i++)
+//     {
+//               bool flag = false;
 
-        count++;
-        for (int j = 0; j < s - i - 1; j++)
-        {
+//         count++;
+//         for (int j = 0; j < s - i - 1; j++)
+//         {
       
-            if (arr[j] > arr[j + 1])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                flag = true;
-            }
+//             if (arr[j] > arr[j + 1])
+//             {
+//                 int temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//                 flag = true;
+//             }
            
-        }
-         if (!flag)
-            {
-                break;
-            }
-    }
-    cout << count << endl;
-}
+//         }
+//          if (!flag)
+//             {
+//                 break;
+//             }
+//     }
+//     cout << count << endl;
+// }
 int main()
 {
     int arr[] = {10, 89, 34, 62, 13, 3};

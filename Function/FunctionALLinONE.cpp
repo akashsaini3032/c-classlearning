@@ -309,11 +309,11 @@ void printNumberPattern(int n) {
     }
 }
 
-// int main() {
-//     int n;
-//     cout << "Enter a number: ";
-//     cin >> n;
-//     printNumberPattern(n);
-//     return 0;
-// }
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    printNumberPattern(n);
+    return 0;
+}
 
